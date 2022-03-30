@@ -1,0 +1,43 @@
+[debug] [2022-03-30T04:26:58.554Z] ----------------------------------------------------------------------
+[debug] [2022-03-30T04:26:58.555Z] Command:       /Users/gettygreenxl2t/.nvm/versions/node/v16.14.2/bin/node /Users/gettygreenxl2t/.nvm/versions/node/v16.14.2/bin/firebase init
+[debug] [2022-03-30T04:26:58.556Z] CLI Version:   10.5.0
+[debug] [2022-03-30T04:26:58.556Z] Platform:      darwin
+[debug] [2022-03-30T04:26:58.556Z] Node Version:  v16.14.2
+[debug] [2022-03-30T04:26:58.557Z] Time:          Tue Mar 29 2022 23:26:58 GMT-0500 (Central Daylight Time)
+[debug] [2022-03-30T04:26:58.557Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-03-30T04:26:58.595Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-03-30T04:26:58.595Z] > authorizing via signed-in user (ng5572011@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/gettygreenxl2t/Documents/Personal-Projects/linkedin
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-03-30T04:27:05.597Z] Using project from CLI flag: its-up-there
+[debug] [2022-03-30T04:27:05.598Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/its-up-there [none]
+[debug] [2022-03-30T04:27:05.792Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/its-up-there 403
+[debug] [2022-03-30T04:27:05.792Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/its-up-there {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-03-30T04:27:05.793Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-03-30T04:27:05.919Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/Users/gettygreenxl2t/.nvm/versions/node/v16.14.2/lib/node_modules/firebase-tools/lib/responseToError.js:47:12)
+    at RetryOperation._fn (/Users/gettygreenxl2t/.nvm/versions/node/v16.14.2/lib/node_modules/firebase-tools/lib/apiv2.js:286:39)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project its-up-there. Please make sure the project exists and your account has permission to access it.
